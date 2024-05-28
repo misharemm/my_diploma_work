@@ -1,0 +1,25 @@
+.VR__message {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 300px;
+  height: 40px;
+  background-color: $main-color-white;
+  border: 1px solid $main-color-red;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/warning-svgrepo-com.svg);
+    background-size: cover;
+  }
+}

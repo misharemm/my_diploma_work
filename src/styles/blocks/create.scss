@@ -1,0 +1,43 @@
+.createWin {
+  width: 600px;
+  height: 350px;
+  background-color: $main-color-white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  border: 1px solid $main-color-blue;
+  border-radius: 50px;
+
+  &__titleBox {
+    margin: 30px 0 0;
+    width: 100px;
+    height: 30px;
+    background-color: $main-color-lightblue;
+    border: 3px solid $main-color-blue;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__form {
+    width: 300px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    z-index: +1;
+  }
+
+  &__names {
+    margin: 15px 0 0 0;
+  }
+}

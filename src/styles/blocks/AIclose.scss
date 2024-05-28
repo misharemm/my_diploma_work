@@ -1,0 +1,28 @@
+.AIclose {
+  cursor: pointer;
+  position: absolute;
+  top: calc(100% - 60px);
+  left: 580px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: $main-color-white;
+  border: 1px solid $main-color-lightblue;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 400ms ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/menu-close.svg);
+    background-size: cover;
+  }
+}

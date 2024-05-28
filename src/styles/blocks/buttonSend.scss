@@ -1,0 +1,13 @@
+.buttonSend {
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  background-color: $main-color-white;
+  border-radius: 15px;
+  border: 1px solid $main-color-hover-blue;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $main-color-hover-blue;
+  }
+}

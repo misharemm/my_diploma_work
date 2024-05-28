@@ -1,0 +1,65 @@
+.lessons {
+  font-family: 'Robot', sans-serif;
+  position: relative;
+  width: 100%;
+
+  &__main {
+    margin-top: 40px;
+    width: 530px;
+    height: 80px;
+    background-color: $main-color-blue;
+    border-radius: 0 45px 45px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+      font-weight: 700;
+      font-size: 30px;
+      margin: 0;
+    }
+  }
+
+  &__exit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 25px 35px 0 0;
+    height: 30px;
+    width: 31px;
+    background-image: url(../images/exit.svg);
+    background-size: cover;
+    transition: transform 400ms ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__disciplines {
+    width: 200px;
+    margin: 40px 50px 40px auto;
+  }
+
+  &__courses {
+    margin: 40px 50px 0 auto;
+    width: 500px;
+    height: 80px;
+    background-color: $main-color-blue;
+    color: $main-color-black;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 300ms ease-in-out,
+    color 300ms ease-in-out;
+
+    &:hover {
+      color: $main-color-white;
+      background-color: $main-color-lightblue2;
+    }
+  }
+}

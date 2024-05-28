@@ -1,0 +1,147 @@
+.projects {
+  font-family: 'Robot', sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100hvh;
+
+  &__main {
+    margin-top: 40px;
+    width: 530px;
+    height: 80px;
+    background-color: $main-color-blue;
+    border-radius: 0 45px 45px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+      font-weight: 700;
+      font-size: 30px;
+      margin: 0;
+    }
+  }
+
+  &__exit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 25px 35px 0 0;
+    height: 30px;
+    width: 31px;
+    background-image: url(../images/exit.svg);
+    background-size: cover;
+    transition: transform 400ms ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__disciplines {
+    width: 200px;
+    margin: 40px auto 40px 50px;
+  } 
+
+  &__courses {
+    margin: 40px auto 0 50px;
+    width: 500px;
+    height: 80px;
+    background-color: $main-color-blue;
+    color: $main-color-black;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 300ms ease-in-out,
+    color 300ms ease-in-out;
+
+    &:hover {
+      color: $main-color-white;
+      background-color: $main-color-lightblue2;
+    }
+  }
+
+  &__git {
+    position: absolute;
+    cursor: pointer;
+    top: 150;
+    right: 0;
+    margin: 35px 50px 0 30px;
+    width: 200px;
+    height: 50px;
+    background-color: $main-color-white;
+    border: 1px solid $main-color-black;
+    border-radius: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    transition: transform 400ms ease;
+
+    &__face {
+      margin: 0 20px 0 10px;
+      width: 30px;
+      height: 30px;
+      background-image: url(../images/github-svgrepo-com.svg);
+      background-size: cover;
+    }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+  }
+
+  &__coding {
+    position: absolute;
+    cursor: pointer;
+    top: 250;
+    right: 0;
+    margin: 35px 50px 0 30px;
+    width: 200px;
+    height: 50px;
+    background-color: $main-color-white;
+    border: 1px solid $main-color-black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $main-color-black;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    transition: transform 400ms ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__Designing {
+    position: absolute;
+    cursor: pointer;
+    top: 300;
+    right: 0;
+    margin: 75px 50px 0 30px;
+    width: 200px;
+    height: 50px;
+    background-color: $main-color-white;
+    border: 1px solid $main-color-black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $main-color-black;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    transition: transform 400ms ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

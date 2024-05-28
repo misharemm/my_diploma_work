@@ -1,0 +1,172 @@
+.points {
+  font-family: 'Robot', sans-serif;
+  position: relative;
+  width: 100%;
+
+  &__main {
+    margin-top: 40px;
+    width: 530px;
+    height: 80px;
+    background-color: $main-color-blue;
+    border-radius: 0 45px 45px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+      font-weight: 700;
+      font-size: 30px;
+      margin: 0;
+    }
+  }
+
+  &__courses {
+    margin: 40px auto 0 50px;
+    width: 500px;
+    height: 80px;
+    background-color: $main-color-blue;
+    color: $main-color-black;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 300ms ease-in-out,
+    color 300ms ease-in-out;
+
+    &:hover {
+      color: $main-color-white;
+      background-color: $main-color-lightblue2;
+    }
+  }
+
+  &__exit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 25px 35px 0 0;
+    height: 30px;
+    width: 31px;
+    background-image: url(../images/exit.svg);
+    background-size: cover;
+    transition: transform 400ms ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__task {
+    position: absolute;
+    top: 115px;
+    left: 600px;
+    display: flex;
+    flex-direction: column;
+
+    &__sended {
+      margin-bottom: 90px;
+      width: 100px;
+      height: 30px;
+      background-color: $main-color-lightred;
+      border-radius: 15px;
+    }
+  }
+
+  &__deadline {
+    position: absolute;
+    top: 115px;
+    left: 780px;
+    display: flex;
+    flex-direction: column;
+
+    &__settime {
+      margin-bottom: 90px;
+      width: 150px;
+      height: 30px;
+      background-color: $main-color-lessons;
+      border-radius: 15px;
+      border: 0;
+      outline: 0;
+    }
+
+    &__button {
+      cursor: pointer;
+      margin-bottom: 90px;
+      width: 100px;
+      height: 30px;
+      background-color: $main-color-green;
+      border-radius: 15px;
+      border: 0;
+      outline: 0;
+    }
+  }
+
+  &__pointsForTask {
+    position: absolute;
+    top: 115px;
+    left: 1100px;
+    display: flex;
+    flex-direction: column;
+
+    &__sumUp {
+      margin-bottom: 90px;
+      width: 100px;
+      height: 30px;
+      background-color: $main-color-lightblue;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__text {
+        width: 40px;
+        background-color: $main-color-lightblue;
+        border: 0;
+        outline: 0;
+      }
+    }
+  }
+
+  &__text {
+    line-height: 20px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  &__comment {
+    position: absolute;
+    top: 115px;
+    right: 80px;
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+      margin: 0;
+      line-height: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    &__area {
+      padding: 5px;
+      width: 150px;
+      height: 50px;
+      background-color: $main-color-AIfield;
+      border-radius: 15px;
+      outline: 0;
+      border: 0;
+      resize: none;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+
+}

@@ -1,0 +1,29 @@
+.lessons__VR {
+  position: absolute;
+  cursor: pointer;
+  top: 350;
+  margin: 35px 0 0 30px;
+  width: 200px;
+  height: 50px;
+  background-color: $main-color-white;
+  border: 1px solid $main-color-blue;
+  border-radius: 50px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  transition: transform 400ms ease;
+
+  &__glasse {
+    margin: 0 20px 0 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/vr-glasses-goggles-headset-user-svgrepo-com.svg);
+    background-size: cover;
+  }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+}

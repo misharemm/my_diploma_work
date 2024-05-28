@@ -1,0 +1,136 @@
+.choseDevise {
+  margin: 0;
+  background-color: $main-color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__boxTitle {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 530px;
+    height: 80px;
+    background-color: $main-color-blue;
+    border-radius: 0 45px 45px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    color: $main-color-white;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  &__button {
+    cursor: pointer;
+    margin: 30px;
+    width: 140px;
+    height: 30px;
+    background-color: $main-color-white;
+    border: 1px solid $main-color-blue;
+    border-radius: 45px;
+  }
+
+  &__desk {
+    position: relative;
+    margin: 0 30px;
+    width: 1450px;
+    height: 600px;
+    background-color: $main-color-AIfield;
+    border: 1px solid $main-color-gray;
+  }
+
+  &__chose {
+    width: 500px;
+    height: 500px;
+    background-color: $main-color-white;
+    border: 1px solid $main-color-AIfield;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__devise {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    cursor: grab;
+    color: $main-color-white;
+    position: absolute;
+  }
+
+  &__router {
+    background-image: url(../images/router-one-svgrepo-com.svg);
+    top: 30px;
+    left: 10px;
+  }
+
+  &__PS {
+    background-image: url(../images/computer-svgrepo-com.svg);
+    top: 100px;
+    left: 10px;
+  }
+
+  &__terminal {
+    background-image: url(../images/terminal-svgrepo-com.svg);
+    top: 170px;
+    left: 10px;
+  }
+
+  &__block {
+    background-image: url(../images/energy-can-svgrepo-com.svg);
+    top: 240px;
+    left: 10px;
+  }
+
+  &__ethernet {
+    background-image: url(../images/ethernet-svgrepo-com.svg);
+    top: 300px;
+    left: 10px;
+  }
+
+  &__box {
+    position: absolute;
+    top: 30px;
+    left: 1000px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__chosenColor {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $main-color-black;
+  }
+}
+
+.drawing-board {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .drawing-point, .drawing-line {
+    position: absolute;
+  }
+
+  .drawing-line {
+    background-color: inherit;
+  }
+}

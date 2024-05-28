@@ -1,0 +1,58 @@
+.computersience {
+  margin: 0;
+
+  &__header {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__boxTitle {
+    margin-top: 40px;
+    width: 530px;
+    height: 80px;
+    background-color: $main-color-blue;
+    border-radius: 0 45px 45px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    color: $main-color-white;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  &__meeting {
+    cursor: pointer;
+    margin: 40px 0 0 50px;
+    width: 150px;
+    height: 30px;
+    background-color: $main-color-white;
+    border: 3px solid $main-color-blue;
+    border-radius: 45px;
+    transition: transform 400ms ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__exit {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    margin: 0 30px 0 0;
+    height: 30px;
+    width: 31px;
+    background-image: url(../images/back-svgrepo-com.svg);
+    background-size: cover;
+    transition: transform 400ms ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

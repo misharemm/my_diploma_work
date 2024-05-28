@@ -1,0 +1,55 @@
+.registerWin {
+  font-family: 'Roboto',sans-serif;
+  width: 400px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  background-color: $main-color-white;
+  border-radius: 30px;
+  z-index: +2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+
+  &:target {
+    right: 0;
+    opacity: 1;
+    z-index: +2;
+    pointer-events: all;
+  }
+
+  &__titleBox {
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    background-color: $main-color-white;
+    border: 3px solid $main-color-hover-blue;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    color: $main-color-black;
+  }
+
+  &__form {
+    padding: 0 10px 10px 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__names {
+    margin: 15px 0 10px 0;
+  }
+}

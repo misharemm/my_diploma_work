@@ -1,0 +1,58 @@
+.meet {
+  background-color: $main-color-black;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 500px;
+    background-color: $main-color-gray;
+    border: 3px solid $main-color-messagefield;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: $main-color-AIfield;
+  }
+
+  &__icons {
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 30px 0;
+    width: 400px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icon {
+    cursor: pointer;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+
+    &-microphone {
+      background-image: url(../images/microphone-white.svg);
+    }
+    &-camera {
+      background-image: url(../images/camera-svgrepo-com.svg);
+    }
+    &-demo {
+      background-image: url(../images/screen-svgrepo-com.svg);
+    }
+    &-chat {
+      background-image: url(../images/chat-square-svgrepo-com.svg);
+    }
+    &-leave {
+      background-image: url(../images/leave-svgrepo-com.svg);
+    }
+  }
+}
