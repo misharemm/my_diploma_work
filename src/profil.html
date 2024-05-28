@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.scss">
+  <title>Профіль</title>
+</head>
+<body class="profil">
+  <header>
+    <div class="profil__header">
+      <p class="profil__header__text" data-translate-key="profil__header__text">
+        Студентський Профіль
+      </p>
+    </div>
+
+    <a href="index.html"><div class="profil__exit"></div></a>  
+  </header>
+
+  <main class="profil__main">
+    <a href="profilTeach.html" class="profil__next"></a>
+
+    <div class="profil__boxImg">
+      <div class="profil__boxText__limitation" data-translate-key="profil__boxText__limitation">
+        Користувачі зареєстровані, як студенти мають
+        <br>обмеження у функціоналі платформи
+        аби щоб дізнатись більше <a href="limits.html" data-translate-key="click">натисніть</a>
+      </div>
+      <div class="profil__img"></div>
+
+      <div class="profil__choseimg">
+        <input
+        class="profil__choseimg__ulpoad"
+        type="file"
+        name=""
+        id="uploadImg"
+        accept="image/*"
+        onchange="previewImage(event)">
+      </div>
+    </div>
+
+    <div class="profil__boxText">
+        <form action="" class="profil__boxText__first">
+          <label class="profil__boxText__second__names-label profil__boxText__second__names-label-name" for="" data-translate-key="profil__boxText__second__names-label-name">Ім'я користувача</label>
+          <input class="profil__boxText__first__names" type="text" id="text" name="user" autocomplete="off">
+
+          <label class="profil__boxText__second__names-label profil__boxText__second__names-label-group" for="" data-translate-key="profil__boxText__second__names-label-group">Група</label>
+          <input class="profil__boxText__first__names" type="text" id="text" name="text" autocomplete="off">
+
+          <label class="profil__boxText__second__names-label profil__boxText__second__names-label-email" for="" data-translate-key="profil__boxText__second__names-label-email">Електронна пошта</label>
+          <input class="profil__boxText__first__names" type="email" id="email" name="email" autocomplete="off">
+
+        </form>
+        <form action="" class="profil__boxText__second">
+          <label class="profil__boxText__second__names-label" for="" data-translate-key="profil__boxText__second__names-label-change">Змінити пароль</label>
+          <input class="profil__boxText__second__names" type="password" id="password" name="password" autocomplete="off">
+
+          <label class="profil__boxText__second__names-label" for="" data-translate-key="profil__boxText__second__names-label-new">Новий пароль</label>
+          <input class="profil__boxText__second__names" type="password" id="password" name="password" autocomplete="off">
+
+          <label class="profil__boxText__second__names-label" for="" data-translate-key="profil__boxText__second__names-label-y">Підтвердження пароля</label>
+          <input class="profil__boxText__second__names" type="password" id="password" name="password" autocomplete="off">
+
+        </form>
+
+        <button class="profil__save" onclick="saveText()" data-translate-key="profil__save">Зберегти</button>
+    </div>
+  </main>
+
+  <script src="scripts/profil.js"></script>
+  <script src="scripts/changeLanguage.js"></script>
+</body>
+</html>

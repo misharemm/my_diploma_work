@@ -3,11 +3,237 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Diploma Work</title>
+  <title>Study Bridge</title>
   <link rel="stylesheet" href="styles/main.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 </head>
 <body>
-  <h1>Diploma Work</h1>
-  <h1>Hello World</h1>
+  <header class="header">
+    <button class="header__buttons header__buttons-register" data-translate-key="header__buttons-register">
+      РЕЄСТРАЦІЯ
+    </button>
+    <button class="header__buttons header__buttons-logIn" data-translate-key="header__buttons-logIn">
+      УВІЙТИ
+    </button>
+    <div class="header__change">
+      <div class="header__change__flag header__change__flag-ukraine"></div>
+      <a href="#" class="header__change__languages header__change__languages-ukranian">укр</a>
+      <div class="header__change__flag header__change__flag-usa"></div>
+      <a href="#" class="header__change__languages header__change__languages-english">eng</a>
+    </div>
+    <button class="header__icon header__icon__calendar"></button>
+    <a href="#menu" class="header__icon header__icon__menu"></a>
+  </header>
+
+  <aside class="registerWin" id="register">
+    <div class="registerWin__titleBox">
+      <p class="registerWin__title" data-translate-key="registerWin__title">Реєстрація</p>
+    </div>
+    <form action="submitregister" class="registerWin__form">
+      <label for="" class="registerWin__names" data-translate-key="registerWin__names-email">Пошта</label>
+      <input type="email" id="email" name="email">
+      <label for="" class="registerWin__names" data-translate-key="registerWin__names-password">Пароль</label>
+      <input type="password" id="password" name="password">
+      <label for="" class="registerWin__names" data-translate-key="registerWin__names-user">Ім'я користувача</label>
+      <input type="text" id="user" name="user">
+    </form>
+    <a href="profil.html">
+      <button class="buttonSend" data-translate-key="buttonSend">Відправити</button>
+    </a>
+  </aside>
+
+  <aside class="logInWin" id="logIn">
+    <div class="logInWin__titleBox">
+      <p class="logInWin__title" data-translate-key="logInWin__title">Увійти</p>
+    </div>
+    <form action="submitregister" class="logInWin__form">
+      <label for="" class="logInWin__names logInWin__names-email" data-translate-key="logInWin__names-email">Пошта</label>
+      <input type="email" id="email" name="email">
+      <label for="" class="logInWin__names logInWin__names-password" data-translate-key="logInWin__names-password">Пароль</label>
+      <input type="password" id="password" name="password">
+    </form>
+    <a href="profil.html">
+      <button class="buttonSend" data-translate-key="buttonSend">Відправити</button>
+    </a>
+  </aside>
+
+  <aside class="menu" id="menu">
+
+    <div class="menu__search">
+      <div class="menu__search__row">
+        <input
+        type="text"
+        id="input-box"
+        class="menu__search__input"
+        placeholder="Пошук"
+        autocomplete="off"
+        >
+        <button class="menu__search__button"><i class="fas fa-search"></i></button>
+      </div>
+
+      <div class="menu__results"></div>
+    </div>
+
+    <a href="#" class="menu__icon"></a>
+    <ul class="menu__list">
+      <a class="menu__lessons" href="lessons.html">
+        <li class="menu__block menu__block-courses" data-translate-key="menu__block-courses">
+          Курси
+        </li>
+      </a>
+      <a class="menu__lessons" href="projects.html">
+        <li class="menu__block menu__block-projects" data-translate-key="menu__block-projects">
+          Проекти
+        </li>
+      </a>
+      <a class="menu__lessons" href="points.html">
+        <li class="menu__block menu__block-points" data-translate-key="menu__block-points">
+          Бали
+        </li>
+      </a>
+      <a class="menu__lessons" href="profil.html">
+        <li class="menu__block menu__block-profile" data-translate-key="menu__block-profile">
+          Профіль
+        </li>
+      </a>
+      <a class="menu__lessons" href="network.html">
+        <li class="menu__block menu__block-other" data-translate-key="menu__block-other">
+          Складання схеми
+        </li>
+      </a>
+    </ul>
+    <p class="menu__contact__text" data-translate-key="menu__contact__text">Контакти</p>
+    <div class="menu__contactIcons">
+      <a href="" class="menu__icon menu__icon-instagram"></a>
+      <a href="" class="menu__icon menu__icon-facebook"></a>
+      <a href="" class="menu__icon menu__icon-twitter"></a>
+      <a href="" class="menu__icon menu__icon-whatsapp"></a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <h1 class="main__name" data-translate-key="main__name">Вітаємо у StudyBridge</h1>
+    <div class="main__picture"></div>
+    <div class="main__buttons">
+        <button class="main__button main__button-create" data-translate-key="main__button-create">
+          СТВОРИТИ
+        </button>
+        <button class="main__button main__button-join" data-translate-key="main__button-join">
+          ПРИЄДНАТИСЯ
+        </button>
+    </div>
+  </main>
+
+  <aside class="createWin" id="create">
+    <div class="createWin__titleBox">
+      <p class="createWin__title" data-translate-key="createWin__title">Створити</p>
+    </div>
+    <form action="submitregister" class="createWin__form">
+      <label for="" class="createWin__names" data-translate-key="createWin__names">Назва дисципліни</label>
+      <input type="email" id="email" name="text">
+      <label for="" class="createWin__names createWin__names-admin" data-translate-key="createWin__names-admin">Адмін</label>
+      <input type="password" id="password" name="text">
+    </form>
+    <a href="#">
+      <button class="buttonNext buttonNext-create" data-translate-key="buttonNext buttonNext-create">Далі</button>
+    </a>
+  </aside>
+
+  <aside class="joinWin" id="join">
+    <div class="joinWin__titleBox">
+      <p class="joinWin__title" data-translate-key="joinWin__title">Створити</p>
+    </div>
+    <form action="submitregister" class="createWin__form">
+      <label for="" class="joinWin__names joinWin__names-code" data-translate-key="joinWin__names-code">Код дисципліни</label>
+      <input type="email" id="email" name="text">
+    </form>
+    <p class="join__text" data-translate-key="join__text">
+      Введіть код, який отримали від адміністратора дисципліни
+    </p>
+    <a href="#">
+      <button class="buttonNext buttonNext-join" data-translate-key="buttonNext buttonNext-join">Далі</button>
+    </a>
+  </aside>
+
+  <aside class="calendar">
+    <div class="calendar__main">
+      <p class="calendar__currentData" data-translate-key="calendar__currentData">Травень 2024</p>
+      <div class="calendar__icons">
+        <span id="prev" class="material-symbols-rounded chevron">chevron_left</span>
+        <span id="next" class="material-symbols-rounded chevron">chevron_right</span>
+        <span class="material-symbols-rounded closeCalendar">close</span>
+      </div>
+    </div>
+
+    <div class="calendar__box">
+      <ul class="calendar__weeks">
+        <li>Нд</li>
+        <li>Пн</li>
+        <li>Вт</li>
+        <li>Ср</li>
+        <li>Чт</li>
+        <li>Пт</li>
+        <li>Сб</li>
+      </ul>
+      <ul class="calendar__days">
+        <!-- <li class="calendar__days__inactive">29</li>
+        <li class="calendar__days__inactive">30</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li class="calendar__days__active">14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+        <li class="calendar__days__inactive">1</li>
+        <li class="calendar__days__inactive">2</li> -->
+      </ul>
+    </div>
+  </aside>
+
+  <aside
+    id="notes"
+    class="callendar__notes">
+      <span class="material-symbols-rounded callendar__notes__closeNotes">
+        close
+      </span>
+
+      <div class="callendar__notes__notesBox">
+        <textarea name="" id="" class="callendar__notes__notesBox__area"></textarea>
+        <span class="material-symbols-rounded callendar__notes__notesBox__send">send</span>
+      </div>
+  </aside>
+
+  <script src="scripts/close.js"></script>
+  <script src="scripts/search.js"></script>
+  <script src="scripts/calendarDesktop.js"></script>
+  <script src="scripts/changeLanguage.js" defer></script>
 </body>
 </html>

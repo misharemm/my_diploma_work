@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.scss">
+  <title>Курси</title>
+</head>
+<body class="bodyLessons">
+  <main class="lessons">
+    <div class="lessons__main">
+      <p class="lessons__main__text" data-translate-key="lessons__main__text">
+        Курси
+      </p>
+    </div>
+    <a href="index.html"><div class="lessons__exit"></div></a>  
+    <h2 class="lessons__disciplines" data-translate-key="lessons__disciplines">Мої дисципліни</h2>
+    <a href="computersience.html" class="lessons__courses lessons__courses-computerscience" data-translate-key="lessons__courses-computerscience">
+        Комп'ютерні мережі
+    </a>
+    <a href="english.html" class="lessons__courses lessons__courses-english" data-translate-key="lessons__courses-english">
+        Англійська мова
+    </a>
+    <a href="math.html" class="lessons__courses lessons__courses-math" data-translate-key="lessons__courses-math">
+      Технології мобільного зв'язку
+    </a>
+    <button class="lessons__AI">
+      <div class="lessons__AI__face"></div>
+      AI помічник
+    </button>
+    <button class="lessons__VR" data-translate-key="lessons__VR">
+      <div class="lessons__VR__glasse"></div>
+      VR кімната
+    </button>
+  </main>
+
+  <aside class="VR__message">
+    <div class="VR__message__icon"></div>
+    <p data-translate-key="VR__message-text">Пристрій VR не під'єднаний!</p>
+  </aside>
+
+  <aside class="AI">
+    <div class="AI__assistent" data-translate-key="lessons__AI">AI помічник</div>
+    <ul class="AI__chatBox">
+      <li class="AI__incomeText AI__incomeText-income">
+        <div class="AI__icon"></div>
+        <p class="AI__text" data-translate-key="AI__text-greeting">Привіт!
+          <br>  
+          Задай своє питання
+        </p>
+      </li>
+        <!-- <li class="AI__incomeText AI__incomeText-outcome">
+          <p class="AI__text">Моє питання</p>
+        </li> -->
+    </ul>
+    <div class="AI__typing">
+      <textarea
+      class="AI__typing__textarea"
+      name=""
+      id=""
+      placeholder="Введіть повідомлення..." required></textarea>
+      <div id="send-button" class="AI__sendIcon"></div>
+    </div>
+  </aside>
+
+  <div class="AIclose">
+    <div class="AIclose__icon"></div>
+  </div>
+
+  <script src="scripts/AI.js" defer></script>
+  <script src="scripts/VR.js" defer></script>
+  <script src="scripts/changeLanguage.js" defer></script>
+</body>
+</html>
