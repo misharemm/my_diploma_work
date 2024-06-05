@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/index.971c2ea4.css">
+  <title>Комп'ютерні мережі</title>
+</head>
+<body>
+  <header class="lecture">
+    <div class="lecture__boxTitle">
+      <h2 class="lecture__title" contenteditable="true" data-translate-key="lecture__title">Лекція 1</h2>
+      <button class="lecture__description__save" onclick="saveDescription()" data-translate-key="lecture__description__save">Зберегти</button>
+    </div>
+    <a href="/computersience.html"><div class="lecture__exit"></div></a> 
+  </header>
+
+  <main>
+    <div class="lecture__description">
+      <p class="lecture__description__text" contenteditable="true"></p>
+    <button class="lecture__description__save" onclick="saveDescription()" data-translate-key="lecture__description__save">Зберегти</button>
+    </div>
+    <div class="lecture__string"></div>
+    <div class="lecture__box">
+      <div class="lecture__videoBox">
+          <iframe class="lecture__video" src="https://www.youtube.com/embed/ваш_ідентифікатор_відео" frameborder="0" allowfullscreen=""></iframe>
+      </div>
+      <button class="lecture__button">
+        <div class="lecture__button__icon"></div>
+      </button>
+    </div>
+  </main>
+
+  <aside class="lecture__add">
+    <div id="fileDropArea" class="lecture__dropfile" data-translate-key="lecture__dropfile">
+      Перетягніть сюди файл для завантаження
+    </div>
+      <label for="fileUpload" data-translate-key="fileUpload">Завантажити файл:</label>
+      <input type="file" id="fileUpload" name="fileUpload">
+    
+    <div id="fileInfo" class="lecture__icon">
+      <img id="fileIcon" alt="icon">
+    </div>
+  <div>
+    <textarea class="lecture__link" placeholder="Посилання на лекцію:" id="lectureLink" name="lectureLink" rows="4" cols="50"></textarea>
+  </div>
+  
+  <button class="lecture__addLecture" data-translate-key="lecture__addLecture">Додати</button>
+  <button class="lecture__addLecture lecture__addLecture-cansel" data-translate-key="lecture__addLecture-cansel">Відмінити</button>
+  </aside>
+
+  <script src="/lecture.82888d33.js"></script>
+  <script src="/lecture.5df72767.js"></script>
+  <script src="/index.a654b091.js"></script>
+<script src="/lecture.f0519a79.js"></script></body>
+</html>
